@@ -1,13 +1,13 @@
 
 import React from "react";
 // import ReactLoading from "react-loading";
-import '../styles/Loading.css';
+import '../style/Loading.css';
 import { motion } from "framer-motion";
 
 const draw = {
     hidden: { pathLength: 0, opacity: 0 },
     visible: (i) => {
-      const delay = 1 + i * 0.5;
+      const delay = 0.5 + i * 0.5;
       return {
         pathLength: 1,
         opacity: 1,
@@ -22,9 +22,6 @@ const draw = {
   export default function App() {
     return (
       <motion.svg
-        width="800"
-        height="800"
-        viewBox="0 0 800 800"
         initial="hidden"
         animate="visible"
       >
@@ -33,7 +30,7 @@ const draw = {
           y1="30"
           x2="220"
           y2="70"
-          stroke="#fff"
+          stroke="black"
           variants={draw}
           custom={2}
         />
@@ -42,7 +39,7 @@ const draw = {
           y1="70"
           x2="240"
           y2="50"
-          stroke="#fff"
+          stroke="black"
           variants={draw}
           custom={2.5}
         />
@@ -51,7 +48,7 @@ const draw = {
           y1="50"
           x2="260"
           y2="70"
-          stroke="#fff"
+          stroke="black"
           custom={3}
           variants={draw}
         />
@@ -60,7 +57,7 @@ const draw = {
           y1="370"
           x2="360"
           y2="230"
-          stroke="#fff"
+          stroke="black"
           custom={3.5}
           variants={draw}
         />
@@ -69,7 +66,7 @@ const draw = {
           y1="70"
           x2="260"
           y2="30"
-          stroke="#fff"
+          stroke="black"
           variants={draw}
           custom={4}
         />
