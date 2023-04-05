@@ -10,7 +10,7 @@ import '../style/Navbar.css';
 
 const styles = {
   navbarStyle: {
-    background: 'green',
+    background: 'black',
     justifyContent: 'flex-end',
   },
 };
@@ -20,7 +20,11 @@ const styles = {
 function Navbar() {
   return (
     <nav style={styles.navbarStyle} className="navbar">
-      <a href="/">Welcome</a>
+     <a href="/">MY</a>
+     <a href="/about">About</a>
+     <a href="/portfolio">Portfolio</a>
+     <a href="/contact">Contact</a>
+     <a href="/github">GitHub</a>
     </nav>
   );
 }
