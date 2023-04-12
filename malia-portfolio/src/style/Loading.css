@@ -1,3 +1,11 @@
+:root {
+    --mint: #C9EDDC;
+    --night: #0A090C;
+    --forest: #07393C;
+    --lav: #93748A;
+    --flash: #EBEBEB;
+}
+
 motion {
-    background-color:black;
+    background-color:var(--night);
 }

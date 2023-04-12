@@ -1,5 +1,13 @@
+:root {
+  --mint: #C9EDDC;
+  --night: #0A090C;
+  --forest: #07393C;
+  --lav: #93748A;
+  --flash: #EBEBEB;
+}
+
 .section {
-    background: #f3e5f5;
+    background: var(--flash);
     padding: 20px;
   }
   
