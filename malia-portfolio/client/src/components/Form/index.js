@@ -1,6 +1,20 @@
 import React, { useState } from 'react';
 import '../../style/Projects.css';
 
+const styles = {
+  input: {
+    marginTop: 8,
+    padding: 5
+  },
+  inputMessage: {
+    marginTop: 10,
+    paddingBottom: 40,
+  },
+  submitBtn: {
+    marginTop: 20
+  }
+};
+
 function Form() {
   // Here we set two state variables for firstName and lastName using `useState`
   const [firstName, setFirstName] = useState('');
@@ -51,13 +65,15 @@ function Form() {
             onChange={handleInputChange}
             type="text"
             placeholder="First Name"
+            style={styles.input}
             />
             <input
             value={lastName}
             name="lastName"
             onChange={handleInputChange}
             type="text"
-            placeholder="Last Name"
+            placeholder="Last Name" 
+            style={styles.input}
             />
             <input
             value={email}
@@ -65,6 +81,7 @@ function Form() {
             onChange={handleInputChange}
             type="text"
             placeholder="Your email"
+            style={styles.input}
             />
             <input
             value={subject}
@@ -72,6 +89,7 @@ function Form() {
             onChange={handleInputChange}
             type="text"
             placeholder="Subject"
+            style={styles.input}
             />
             <input
             value={message}
@@ -79,9 +97,14 @@ function Form() {
             onChange={handleInputChange}
             type="text"
             placeholder="Your message"
+            style={styles.inputMessage}
             />
             <div className="button-box">
-            <button className="view" type="button" onClick={handleFormSubmit}>
+            <button 
+            className="view" 
+            type="button" 
+            style={styles.submitBtn}
+            onClick={handleFormSubmit}>
             Submit
             </button>
         </div>
