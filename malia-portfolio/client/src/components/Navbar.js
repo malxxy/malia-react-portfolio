@@ -3,7 +3,6 @@ import '../style/Navbar.css';
 
 const styles = {
   navbarStyle: {
-    background: 'black',
     justifyContent: 'flex-end',
     float: 'right',
   },

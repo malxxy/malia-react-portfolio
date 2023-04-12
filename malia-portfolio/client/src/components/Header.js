@@ -14,7 +14,6 @@ const styles = {
 function Header() {
   return (
     <header style={styles.headerStyle} className="header">
-      <h1 style={styles.headingStyle}>Malia Yraguen</h1>
     </header>
   );
 }

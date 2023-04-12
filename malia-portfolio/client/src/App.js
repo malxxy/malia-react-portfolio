@@ -1,10 +1,11 @@
 import React from "react";
 import Header from "./components/Header";
 import Navbar from "./components/Navbar";
+import About from "./components/About";
 import Footer from "./components/Footer";
 import Type from "./components/Typewriter";
 import Loading from "./components/Loading";
-import Projects from "./components/Projects";
+import DisplayProjects from "./components/displayProjects"
 
 function App() {
   return (
@@ -12,13 +13,11 @@ function App() {
       <Navbar />
       <Header />
       <Type />
-      <div className="container" >
-        <Projects />
-      </div>
-      < Loading />
+      <About />
+      <DisplayProjects />
+      <Loading />
       <Footer />
     </div>
-
   );
 }
 
