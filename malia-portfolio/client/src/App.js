@@ -6,6 +6,7 @@ import Footer from "./components/Footer";
 import Type from "./components/Typewriter";
 import Loading from "./components/Loading";
 import DisplayProjects from "./components/displayProjects"
+import Form from "./components/Form"
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <About />
       <DisplayProjects />
       <Loading />
+      <Form />
       <Footer />
     </div>
   );
