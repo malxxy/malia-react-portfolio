@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './style.css';
+import '../../style/Projects.css';
 
 function Form() {
   // Here we set two state variables for firstName and lastName using `useState`
@@ -32,49 +32,51 @@ function Form() {
 
   return (
     <div>
-      <p>
-        {firstName} {lastName}, thank you for your message. Malia will get back to you as soon as possible!
-      </p>
-      <form className="form">
-        <input
-          value={firstName}
-          name="firstName"
-          onChange={handleInputChange}
-          type="text"
-          placeholder="First Name"
-        />
-        <input
-          value={lastName}
-          name="lastName"
-          onChange={handleInputChange}
-          type="text"
-          placeholder="Last Name"
-        />
-         <input
-          value={email}
-          name="email"
-          onChange={handleInputChange}
-          type="text"
-          placeholder="Your email"
-        />
-         <input
-          value={subject}
-          name="subject"
-          onChange={handleInputChange}
-          type="text"
-          placeholder="Subject"
-        />
-        <input
-          value={message}
-          name="message"
-          onChange={handleInputChange}
-          type="text"
-          placeholder="Your message"
-        />
-        <button type="button" onClick={handleFormSubmit}>
-          Submit
-        </button>
-      </form>
+        <card className="card">
+        <h3 className="title">Contact Malia </h3>
+        <form className="form">
+            <input
+            value={firstName}
+            name="firstName"
+            onChange={handleInputChange}
+            type="text"
+            placeholder="First Name"
+            />
+            <input
+            value={lastName}
+            name="lastName"
+            onChange={handleInputChange}
+            type="text"
+            placeholder="Last Name"
+            />
+            <input
+            value={email}
+            name="email"
+            onChange={handleInputChange}
+            type="text"
+            placeholder="Your email"
+            />
+            <input
+            value={subject}
+            name="subject"
+            onChange={handleInputChange}
+            type="text"
+            placeholder="Subject"
+            />
+            <input
+            value={message}
+            name="message"
+            onChange={handleInputChange}
+            type="text"
+            placeholder="Your message"
+            />
+            <div className="button-box">
+            <button className="view" type="button" onClick={handleFormSubmit}>
+            Submit
+            </button>
+        </div>
+        </form>
+      </card>
     </div>
   );
 }

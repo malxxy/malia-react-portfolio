@@ -36,6 +36,11 @@
     width: 100%;
     color: var(--flash);
   }
+  .card input {
+    width: 100%;
+    color: var(--night);
+  }
+
   .button-box {
     width: 100%;
   }
