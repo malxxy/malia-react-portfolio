@@ -1,23 +1,28 @@
 import React from "react";
 import Header from "./components/Header";
 import Navbar from "./components/Navbar";
-import About from "./components/About";
 import Footer from "./components/Footer";
-import Type from "./components/Typewriter";
-import Loading from "./components/Loading";
-import DisplayProjects from "./components/displayProjects"
-import Form from "./components/Form"
+import Main from "./pages/Main";
+import About from "./pages/About";
+import Portfolio from "./pages/Portfolio";
+import Contact from "./pages/Contact";
 
 function App() {
   return (
     <div>
-      <Navbar />
       <Header />
-      <Type />
+      <Navbar />
+      {/* Logic to display MAIN, ABOUT, PORTFOLIO, or CONTACT */}
+      <Main/>
+      {/* Main includes */}
+        {/* <Type /> + Learn More Button that takes you to About */}
       <About />
-      <DisplayProjects />
-      <Loading />
-      <Form />
+      {/* About includes */}
+        {/* About, linkedin link, profile picture, description, email, and button to download resume */}
+      <Portfolio/>
+      {/* Portfolio includes */}
+        {/* Reusable cards that display multiple projects with image, clicked upon takes you to project */}
+      <Contact/>
       <Footer />
     </div>
   );

@@ -2,12 +2,8 @@ import React from 'react';
 import '../style/Header.css'
 
 const styles = {
-  headerStyle: {
-    background: 'black',
-  },
   headingStyle: {
     fontSize: '100px',
-    color: 'white',
   },
 };
 
