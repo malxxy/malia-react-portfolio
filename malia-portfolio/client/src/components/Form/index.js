@@ -10,11 +10,21 @@ function Form() {
   const [message, setMessage] = useState('');
 
   const handleInputChange = (e) => {
-    // Getting the value and name of the input which triggered the change
-    const { name, value } = e.target;
-    // Ternary statement that will call either setFirstName or setLastName based on what field the user is typing in
-    return name === 'firstName' ? setFirstName(value) : setLastName(value);
-    // must add subject email, and message
+    const { target } = e;
+    const inputType = target.name;
+    const inputValue = target.value;
+
+    if (inputType === 'firstName') {
+      setFirstName(inputValue);
+    } else if (inputType === 'lastName') {
+      setLastName(inputValue);
+    } else if (inputType === 'subject') {
+      setSubject(inputValue);
+    } else if (inputType === 'email') {
+      setEmail(inputValue);
+    } else {
+      setMessage(inputValue);
+    }
   };
 
   const handleFormSubmit = (e) => {
@@ -33,7 +43,7 @@ function Form() {
   return (
     <div>
         <card className="card">
-        <h3 className="title">Contact Malia </h3>
+        <h3 className="title">Contact Malia</h3>
         <form className="form">
             <input
             value={firstName}
