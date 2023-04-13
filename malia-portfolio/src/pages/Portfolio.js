@@ -1,6 +1,6 @@
 import React from 'react';
 import '../style/Projects.css';
-import DisplayProjects from '../components/displayProjects';
+import DisplayProjects from '../components/DisplayProjects';
 
 function Portfolio() {
   return (
