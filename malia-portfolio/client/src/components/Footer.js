@@ -13,9 +13,9 @@ const styles = {
 
 function Footer() {
   return (
-    <header style={styles.footerStyle} className="header">
+    <footer style={styles.footerStyle} className="header">
       <h5 style={styles.footerStyle}>Wesbite designed and developed by Malia Yraguen</h5>
-    </header>
+    </footer>
   );
 }
 
