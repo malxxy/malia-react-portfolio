@@ -3,8 +3,7 @@ import Home from '../pages/Home'
 import About from "../pages/About";
 import Portfolio from "../pages/Portfolio";
 import Contact from "../pages/Contact";
-import Navbar from "./Navbar";
-import Header from "./Header";
+import Nav from "./Nav";
 import Footer from "./Footer";
 
 // Logic to display page based on what tab user is in
@@ -28,9 +27,7 @@ function Container() {
   
     return (
       <div>
-        <Header />
-
-        <Navbar currentPage={currentPage} handlePageChange={handlePageChange} />
+        <Nav currentPage={currentPage} handlePageChange={handlePageChange} />
         {renderPage()}
 
         <Footer />
