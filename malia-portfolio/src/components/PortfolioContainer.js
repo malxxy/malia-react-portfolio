@@ -7,7 +7,7 @@ import Nav from "./Nav";
 import Footer from "./Footer";
 
 // Logic to display page based on what tab user is in
-function Container() {
+function PortfolioContainer() {
     const [currentPage, setCurrentPage] = useState('Home');
 
     const renderPage = () => {
@@ -35,4 +35,4 @@ function Container() {
     );
 }
 
-export default Container;
+export default PortfolioContainer;
