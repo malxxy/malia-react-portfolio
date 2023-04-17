@@ -5,13 +5,13 @@ function Home() {
     return (
         <div>
             <h1>Malia Yraguen</h1>
-            <container>
+            <div>
                 <Type />
-            </container>
+            </div>
 
-            <container>
+            <div>
                 <button href="#About">Learn More</button>
-            </container>
+            </div>
         </div>
     )
 };

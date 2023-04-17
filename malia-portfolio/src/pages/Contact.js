@@ -5,9 +5,9 @@ function Contact() {
   return (
     <div>
         <h1>Contact Malia</h1>
-        <container>
+        <div>
            <Form />
-        </container>
+        </div>
     </div>
   );
 }

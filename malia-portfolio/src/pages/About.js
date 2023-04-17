@@ -1,5 +1,4 @@
 import React from 'react';
-import '../style/About.css'
 
 function About() {
   return (
@@ -8,13 +7,13 @@ function About() {
         <br></br>
         {/* <img> profile picture</img> */}
         <p>Malia is a fullstack software developer and project manager based in San Diego, CA.</p>
-        <container>
+        <div>
           <ul>
             <li>LinkedIn</li>
             <li>GitHub</li>
           </ul>
           <button>Download Resume</button>
-        </container>
+        </div>
     </div>
   );
 }
